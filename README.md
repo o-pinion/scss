@@ -15,7 +15,6 @@ npm i scss-opinionated@latest
 Then import in the following order in you main.scss style and where you need it
 
 ```scss
-@import 'myColor.scss';
 @import 'scss-opinionated/mixin';
 @import 'scss-opinionated/utilities';
 ```
