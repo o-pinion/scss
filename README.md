@@ -9,29 +9,29 @@ More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/d
 In the working repository
 
 ```
-npm i scss-variables@latest
+npm i scss-opinionated@latest
 ```
 
 Then import in the following order in you main.scss style and where you need it
 
 ```scss
 @import 'myColor.scss';
-@import 'scss-variables/mixin';
-@import 'scss-variables/utilities';
+@import 'scss-opinionated/mixin';
+@import 'scss-opinionated/utilities';
 ```
 
 You can import specific mixins like follow
 ```scss
-@use 'scss-variables/mixins/shadow' as shadow;
-@use 'scss-variables/mixins/grid' as grid;
-@use 'scss-variables/mixins/browser' as browser;
+@use 'scss-opinionated/mixins/shadow' as shadow;
+@use 'scss-opinionated/mixins/grid' as grid;
+@use 'scss-opinionated/mixins/browser' as browser;
 // ...
 @include shadow.box-shadow(1);
 ```
 
 **Note**
-- `scss-variables/mixin` have to be imported in every scss file that needs they mixins
-- `scss-variables/utilities` should be imported **only once**. If not, it's gonna create useless classes
+- `scss-opinionated/mixin` have to be imported in every scss file that needs they mixins
+- `scss-opinionated/utilities` should be imported **only once**. If not, it's gonna create useless classes
 - mixin and utilities work good together but you could only use one of the both if you need it
 
 ## Css Variable

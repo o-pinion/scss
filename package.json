@@ -1,5 +1,5 @@
 {
-  "name": "scss-variables",
+  "name": "scss-opinionated",
   "version": "16.0.0",
   "description": "Opiniated scss mixin and utilities",
   "license": "MIT",
@@ -12,15 +12,15 @@
     "mixins",
     "utilities"
   ],
-  "homepage": "https://github.com/rbalet/scss-variables#readme",
+  "homepage": "https://github.com/rbalet/scss-opinionated#readme",
   "bugs": {
-    "url": "https://github.com/rbalet/scss-variables/issues"
+    "url": "https://github.com/rbalet/scss-opinionated/issues"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "repository": {
-    "url": "https://github.com/rbalet/scss-variables"
+    "url": "https://github.com/rbalet/scss-opinionated"
   }
 }
