@@ -1,0 +1,60 @@
+$neumorphism-transition: all 250ms !default;
+$neumorphism-pushOnPress: true !default;
+
+@mixin neumorphism(
+  $elevation: 9,
+  $animation: null,
+  $top-color: #a3b1c6,
+  $bottom-color: #a3b1c6,
+  $important: null
+) {
+  transition: $neumorphism-transition;
+  @if $animation {
+    transform: translateY(-5px);
+    @include neumorphism($elevation, null, $top-color, $bottom-color, $important);
+
+    &:hover,
+    &.active,
+    &.focus {
+      @if ($neumorphism-pushOnPress == true) {
+        &:not(:active) {
+          @include neumorphism($animation, null, $top-color, $bottom-color, $important);
+        }
+      } @else {
+        @include neumorphism($animation, null, $top-color, $bottom-color, $important);
+      }
+    }
+  } @else {
+    box-shadow: 9px 9px 16px rgba($top-color, 0.6), -9px -9px 16px rgba($top-color, 0.5);
+    @if $elevation == 0 {
+      box-shadow: 0 0 0 rgba($top-color, 0) $important;
+    } @else if $elevation == 0.5 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 1 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 2 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 3 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 4 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 6 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 7 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 8 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    } @else if $elevation == 9 {
+      box-shadow: #{$elevation}px #{$elevation}px #{$elevation + 7}px rgba($top-color, 0.6),
+        -#{$elevation}px -#{$elevation}px #{$elevation + 7}px rgba($top-color, 0.5);
+    }
+  }
+}

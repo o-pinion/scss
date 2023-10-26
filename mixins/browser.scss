@@ -1,0 +1,83 @@
+// @ToDo: Test the not mixin
+
+@mixin chrome {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    @content;
+  }
+}
+
+@mixin edge {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+@mixin notEdge {
+  @supports not (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+@mixin ie {
+  // IE9+
+  @media screen and (min-width: 0\0) and (min-resolution: +72dpi) {
+    @content;
+  }
+
+  // IE8
+  @media \0screen {
+    @content;
+  }
+
+  // IE6,7
+  @media screen\9 {
+    @content;
+  }
+}
+
+@mixin notIe {
+  @media not all and (min-width: 0\0) and (min-resolution: +72dpi) {
+    @content;
+  }
+}
+
+@mixin safari {
+  // Safari 10.1+
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      @content;
+    }
+  }
+}
+
+@mixin notSafari {
+  @media all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      @content;
+    }
+  }
+}
+
+@mixin ios {
+  @supports (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+@mixin notIos {
+  @supports not (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin notPrint {
+  @media not print {
+    @content;
+  }
+}

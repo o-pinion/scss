@@ -1,0 +1,37 @@
+/** According to google screen size */
+
+@mixin iPhone5 {
+  @media (max-height: 568px) {
+    @content;
+  }
+}
+
+@mixin iPhone6 {
+  @media (max-height: 667px) {
+    @content;
+  }
+}
+
+@mixin iPhone6Plus {
+  @media (max-height: 736px) {
+    @content;
+  }
+}
+
+@mixin iPhoneX {
+  @media (max-height: 812px) {
+    @content;
+  }
+}
+
+@mixin iPad {
+  @media (max-height: 1024px) {
+    @content;
+  }
+}
+
+@mixin iPadPro {
+  @media (max-height: 1366px) {
+    @content;
+  }
+}

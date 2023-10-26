@@ -1,0 +1,26 @@
+{
+  "name": "scss-variables",
+  "version": "16.0.0",
+  "description": "Opiniated scss mixin and utilities",
+  "license": "MIT",
+  "author": "Raphael Balet",
+  "maintainers": [
+    "raphael.balet@outlook.com"
+  ],
+  "keywords": [
+    "scss",
+    "mixins",
+    "utilities"
+  ],
+  "homepage": "https://github.com/rbalet/scss-variables#readme",
+  "bugs": {
+    "url": "https://github.com/rbalet/scss-variables/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "url": "https://github.com/rbalet/scss-variables"
+  }
+}

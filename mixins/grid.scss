@@ -1,0 +1,147 @@
+/** According to bootstrap screen size
+* @see https://getbootstrap.com/docs/4.0/layout/grid/
+*/
+
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+$xxl: 1500px !default;
+
+@mixin sm {
+  @media (max-width: #{$sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin smUp {
+  @media (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin sm-md {
+  @media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+@mixin sm-lg {
+  @media (min-width: #{$sm}) and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin sm-xl {
+  @media (min-width: #{$sm}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin sm-xxl {
+  @media (min-width: #{$sm}) and (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+@mixin mdUp {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin mdOnly {
+  @media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+@mixin md-lg {
+  @media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin md-xl {
+  @media (min-width: #{$md}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin md-xl {
+  @media (min-width: #{$md}) and (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin lgUp {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin lgOnly {
+  @media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg-xl {
+  @media (min-width: #{$lg}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg-xxl {
+  @media (min-width: #{$lg}) and (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xlUp {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+@mixin xlOnly {
+  @media (min-width: #{$lg}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl-xxl {
+  @media (min-width: #{$xl}) and (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xxlUp {
+  @media (min-width: #{$xxl}) {
+    @content;
+  }
+}
