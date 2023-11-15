@@ -1,8 +1,8 @@
-/** According to the Google living style guide
+/* According to the Google living style guide
 * @see https://material.io/design/environment/elevation.html#default-elevations
 */
 
-/**
+/*
 
 -- Spectrum --
 
@@ -116,7 +116,7 @@ $pushOnPress: true !default;
   }
 }
 
-// Svg Fix
+/* Svg Fix */
 @mixin drop-shadow($elevation: 1, $animation: null, $color: #000, $important: null) {
   transition: $transition;
   @if $animation {
