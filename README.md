@@ -1,6 +1,6 @@
 # Scss Variables
 
-More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/description
+More infos and example in [our wiki](https://github.com/rbalet/scss-opinionated/wiki)
 
 **This repository is a beta version an may change in the future**
 
