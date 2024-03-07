@@ -35,13 +35,15 @@ You can import specific mixins like follow
 ### Border
 ```scss
 :root {
-  --border-smallest: 4px;
-  --border-smaller: 8px;
-  --border-small: 10px;
-  --border: 16px;
+  --border-smallest: 4px; // Extra small : Menu, Snackbars, Text fields
+  --border-smaller: 8px; // Small : Chips, Rich tooltip
+  --border-small: 10px; // Medium : Cards, Small FABs
+  --border: 16px; // Large : FABs, Navigation drawers
   --border-big: 20px;
+  --border-bigger: 28px; // Extra large : Dialogs, Large FABs, Search view (full-screen), Time picker, Time input
   --border-rounded: 50px;
-  --border-circle: 100%;
+  --border-circle: 100%; // @TODO remove in favor of --full
+  --border-full: 100%; // Full : Badge, Buttons, Sliders, Switches, Search bards
 }
 ```
 
