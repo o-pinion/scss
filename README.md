@@ -1,6 +1,9 @@
 # Scss Variables
-
 More infos and example in [our wiki](https://github.com/rbalet/scss-opinionated/wiki)
+
+[![npm version](https://img.shields.io/npm/v/scss-opinionated.svg)](https://www.npmjs.com/package/scss-opinionated)
+![NPM](https://img.shields.io/npm/l/scss-opinionated)
+![npm](https://img.shields.io/npm/dm/scss-opinionated)
 
 ## Quick start
 
