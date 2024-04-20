@@ -22,5 +22,17 @@
   },
   "repository": {
     "url": "https://github.com/rbalet/scss-opinionated"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@semantic-release/apm-config": "^9.0.1",
+    "husky": "^9.0.11"
+  },
+  "release": {
+    "extends": "@semantic-release/apm-config"
+  },
+  "scripts": {
+    "prepare": "husky"
   }
 }
