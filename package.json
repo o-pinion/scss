@@ -24,12 +24,12 @@
     "type": "git",
     "url": "git+https://github.com/rbalet/scss-opinionated"
   },
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
     "@semantic-release/apm-config": "^9.0.1",
-    "husky": "^9.0.11"
+    "husky": "^9.0.11",
+    "semantic-release": "^23.0.8"
   },
   "release": {
     "extends": "@semantic-release/apm-config"
