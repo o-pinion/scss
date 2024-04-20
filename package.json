@@ -21,8 +21,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "repository": {
-    "url": "https://github.com/rbalet/scss-opinionated"
+    "type": "git",
+    "url": "git+https://github.com/rbalet/scss-opinionated"
   },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
@@ -34,5 +36,6 @@
   },
   "scripts": {
     "prepare": "husky"
-  }
+  },
+  "sideEffects": false
 }
