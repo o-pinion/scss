@@ -36,7 +36,7 @@ You can import specific mixins like follow
 - mixin and utilities work good together but you could only use one of the both if you need it
 
 ## Css Variable
-### Border
+### Radius
 ```scss
 :root {
   --radius-smallest: 4px; // Extra small : Menu, Snackbars, Text fields
