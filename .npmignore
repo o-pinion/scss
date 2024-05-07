@@ -1,2 +1,7 @@
 .prettierrc
 commitlint.config.ts
+package.json
+package-lock.json
+node_modules
+.husky
+.github

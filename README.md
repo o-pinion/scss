@@ -5,6 +5,7 @@ More infos and example in [our wiki](https://github.com/rbalet/scss-opinionated/
 ![NPM](https://img.shields.io/npm/l/scss-opinionated)
 ![npm](https://img.shields.io/npm/dm/scss-opinionated)
 
+
 ## Quick start
 
 In the working repository
@@ -38,15 +39,15 @@ You can import specific mixins like follow
 ### Border
 ```scss
 :root {
-  --border-smallest: 4px; // Extra small : Menu, Snackbars, Text fields
-  --border-smaller: 8px; // Small : Chips, Rich tooltip
-  --border-small: 10px; // Medium : Cards, Small FABs
-  --border: 16px; // Large : FABs, Navigation drawers
-  --border-big: 20px;
-  --border-bigger: 28px; // Extra large : Dialogs, Large FABs, Search view (full-screen), Time picker, Time input
-  --border-rounded: 50px;
-  --border-circle: 100%; // @TODO remove in favor of --full
-  --border-full: 100%; // Full : Badge, Buttons, Sliders, Switches, Search bards
+  --radius-smallest: 4px; // Extra small : Menu, Snackbars, Text fields
+  --radius-smaller: 8px; // Small : Chips, Rich tooltip
+  --radius-small: 10px; // Medium : Cards, Small FABs
+  --radius: 16px; // Large : FABs, Navigation drawers
+  --radius-big: 20px;
+  --radius-bigger: 28px; // Extra large : Dialogs, Large FABs, Search view (full-screen), Time picker, Time input
+  --radius-rounded: 50px;
+  --radius-circle: 100%; // @TODO remove in favor of --full
+  --radius-full: 100%; // Full : Badge, Buttons, Sliders, Switches, Search bards
 }
 ```
 

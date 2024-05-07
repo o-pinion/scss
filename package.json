@@ -1,6 +1,6 @@
 {
   "name": "scss-opinionated",
-  "version": "17.2.0",
+  "version": "18.0.0",
   "description": "Opiniated scss mixin and utilities",
   "license": "MIT",
   "author": "Raphael Balet",
@@ -35,6 +35,7 @@
     "extends": "@semantic-release/apm-config"
   },
   "scripts": {
+    "publish": "npm publish",
     "prepare": "husky"
   },
   "sideEffects": false
