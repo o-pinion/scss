@@ -71,7 +71,7 @@ Source: https://uxdesign.cc/ui-cheat-sheet-spacing-friendships-e37a6fccc407
 ### Width
 Similar as bootstrap 
 
-```css
+```scss
 :root {
   @media (min-width: 576px) and (max-width: 768px) {
     --container-max-width: 540px;
@@ -95,6 +95,28 @@ Similar as bootstrap
   --z-index-higher: 100;
   --z-index-high: 10;
   --z-index-normal: 1;
+}
+```
+
+## Mixins
+### Grid
+```scss
+@include sm, md, lg, xl , xxl { };
+@include smUp, mdUp, ... {};
+@include smOnly, mdOnly, ... {};
+@include sm-md, sm-lg, ... {}
+
+// Where
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+$xxl: 1500px !default;
+
+@mixin sm {
+  @media (max-width: #{$md - 1px}) {
+    @content;
+  }
 }
 ```
 

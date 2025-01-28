@@ -1,6 +1,6 @@
 {
   "name": "scss-opinionated",
-  "version": "18.0.0",
+  "version": "19.0.0",
   "description": "Opiniated scss mixin and utilities",
   "license": "MIT",
   "author": "Raphael Balet",
@@ -25,11 +25,11 @@
     "url": "git+https://github.com/rbalet/scss-opinionated"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.2",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@semantic-release/apm-config": "^9.0.1",
-    "husky": "^9.0.11",
-    "semantic-release": "^23.0.8"
+    "husky": "^9.1.7",
+    "semantic-release": "^24.2.1"
   },
   "release": {
     "extends": "@semantic-release/apm-config"

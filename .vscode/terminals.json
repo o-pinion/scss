@@ -1,0 +1,14 @@
+{
+  "autorun": true,
+  "autokill": true,
+  "terminals": [
+    {
+      "name": "Scss Opinionated",
+      "description": "Scss Opinionated",
+      "icon": "vm",
+      "command": "npm run publish",
+      "open": true,
+      "execute": false
+    }
+  ]
+}
