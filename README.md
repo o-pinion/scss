@@ -1,9 +1,9 @@
 # Scss Variables
-More infos and example in [our wiki](https://github.com/rbalet/scss-opinionated/wiki)
+More infos and example in [our wiki](https://github.com/o-pinion/scss/wiki)
 
-[![npm version](https://img.shields.io/npm/v/scss-opinionated.svg)](https://www.npmjs.com/package/scss-opinionated)
-![NPM](https://img.shields.io/npm/l/scss-opinionated)
-![npm](https://img.shields.io/npm/dm/scss-opinionated)
+[![npm version](https://img.shields.io/npm/v/@o-pinion/scss.svg)](https://www.npmjs.com/package/@o-pinion/scss)
+![NPM](https://img.shields.io/npm/l/@o-pinion/scss)
+![npm](https://img.shields.io/npm/dm/@o-pinion/scss)
 
 
 ## Quick start
@@ -11,28 +11,28 @@ More infos and example in [our wiki](https://github.com/rbalet/scss-opinionated/
 In the working repository
 
 ```
-npm i scss-opinionated@latest
+npm i @o-pinion/scss@latest
 ```
 
 Then import in the following order in you main.scss style and where you need it
 
 ```scss
-@import 'scss-opinionated/mixin';
-@import 'scss-opinionated/utilities';
+@import '@o-pinion/scss/mixin';
+@import '@o-pinion/scss/utilities';
 ```
 
 You can import specific mixins like follow
 ```scss
-@use 'scss-opinionated/mixins/shadow' as shadow;
-@use 'scss-opinionated/mixins/grid' as grid;
-@use 'scss-opinionated/mixins/browser' as browser;
+@use '@o-pinion/scss/mixins/shadow' as shadow;
+@use '@o-pinion/scss/mixins/grid' as grid;
+@use '@o-pinion/scss/mixins/browser' as browser;
 // ...
 @include shadow.box-shadow(1);
 ```
 
 **Note**
-- `scss-opinionated/mixin` have to be imported in every scss file that needs they mixins
-- `scss-opinionated/utilities` should be imported **only once**. If not, it's gonna create useless classes
+- `@o-pinion/scss/mixin` have to be imported in every scss file that needs they mixins
+- `@o-pinion/scss/utilities` should be imported **only once**. If not, it's gonna create useless classes
 - mixin and utilities work good together but you could only use one of the both if you need it
 
 ## Css Variable

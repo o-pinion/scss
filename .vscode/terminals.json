@@ -6,7 +6,7 @@
       "name": "Scss Opinionated",
       "description": "Scss Opinionated",
       "icon": "vm",
-      "command": "npm run publish",
+      "command": "npm i",
       "open": true,
       "execute": false
     }

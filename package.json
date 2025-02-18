@@ -1,5 +1,5 @@
 {
-  "name": "scss-opinionated",
+  "name": "@o-pinion/scss",
   "version": "19.0.0",
   "description": "Opiniated scss mixin and utilities",
   "license": "MIT",
@@ -12,9 +12,9 @@
     "mixins",
     "utilities"
   ],
-  "homepage": "https://github.com/rbalet/scss-opinionated#readme",
+  "homepage": "https://github.com/rbalet/@o-pinion/scss#readme",
   "bugs": {
-    "url": "https://github.com/rbalet/scss-opinionated/issues"
+    "url": "https://github.com/rbalet/@o-pinion/scss/issues"
   },
   "publishConfig": {
     "access": "public",
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rbalet/scss-opinionated"
+    "url": "git+https://github.com/rbalet/@o-pinion/scss"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "@semantic-release/apm-config": "^9.0.1",
     "husky": "^9.1.7",
-    "semantic-release": "^24.2.1"
+    "semantic-release": "^24.2.3"
   },
   "release": {
     "extends": "@semantic-release/apm-config"
